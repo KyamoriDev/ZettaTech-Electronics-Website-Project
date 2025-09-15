@@ -18,6 +18,7 @@
   --normal-font-size: .938rem;
   --smaller-font-size: .75rem;
   /*===== Margins =====*/
+  --mb-1: 0.5rem;
   --mb-2: 1rem;
   --mb-4: 2rem;
   --mb-5: 2.5rem;
@@ -117,7 +118,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
+  background-color: var(--first-color);
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
@@ -143,6 +144,10 @@ img {
   }
 }
 
+.nav__menu {
+  color: #fff;
+}
+
 .nav__item {
   margin-bottom: var(--mb-4);
 }
@@ -163,7 +168,7 @@ img {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--first-color);
+  background-color: #fff;
 }
 
 .nav__logo {
@@ -445,25 +450,30 @@ img {
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 }
 
 .footer__title {
+  text-align: left;
   font-size: 2rem;
-  margin-bottom: var(--mb-4);
+  padding-left: 1rem;
+  margin-bottom: var(--mb-1);
 }
 
-.footer__social {
-  margin-bottom: var(--mb-4);
+.footer__ahh {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
 }
 
 .footer__icon {
   font-size: 1.5rem;
   color: #fff;
-  margin: 0 var(--mb-2);
 }
 
 .footer__copy {
+  padding-left: 1rem;
+  text-align: left;
   font-size: var(--smaller-font-size);
 }
 
